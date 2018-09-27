@@ -1,0 +1,53 @@
+{
+  "name": "pentwi10",
+  "version": "0.1.0",
+  "description": "React: The definitive guide",
+  "main": "./PizzaBot/server.js",
+  "private": true,
+  "scripts": {
+    "start-webpack-server": "webpack-dev-server --hot --inline --colors --progress",
+    "start": "node ./PizzaBot/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stk-pablo-gonzalez/PENTWI10.git"
+  },
+  "keywords": [
+    "react",
+    "mva",
+    "redux",
+    "pizza-bot"
+  ],
+  "author": "Pablo Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stk-pablo-gonzalez/PENTWI10/issues"
+  },
+  "homepage": "https://github.com/stk-pablo-gonzalez/PENTWI10#readme",
+  "dependencies": {
+    "botbuilder": "^4.0.6",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "react": "^16.5.2",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-dom": "^16.5.2",
+    "react-router": "^4.3.1",
+    "restify": "^7.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "react-hot-loader": "^4.3.11",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  }
+}
