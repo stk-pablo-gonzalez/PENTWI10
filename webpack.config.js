@@ -1,6 +1,8 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
+    mode: 'development',
     context: path.join(__dirname, 'app'),
     entry: {
         javascript: './app.js',
@@ -44,5 +46,8 @@ module.exports = {
                 }
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true
     }
 }
