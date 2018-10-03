@@ -26,28 +26,19 @@
     "url": "https://github.com/stk-pablo-gonzalez/PENTWI10/issues"
   },
   "homepage": "https://github.com/stk-pablo-gonzalez/PENTWI10#readme",
-  "dependencies": {
-    "botbuilder": "^4.0.6",
-    "express": "^4.16.3",
-    "jquery": "^3.3.1",
-    "react": "^16.5.2",
-    "react-addons-pure-render-mixin": "^15.6.2",
-    "react-dom": "^16.5.2",
-    "react-router": "^4.3.1",
-    "restify": "^7.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.2",
-    "css-loader": "^1.0.0",
-    "file-loader": "^2.0.0",
+    "babel-loader": "^8.0.4",
     "html-loader": "^0.5.5",
-    "react-hot-loader": "^4.3.11",
-    "style-loader": "^0.23.0",
-    "url-loader": "^1.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
   }
 }
