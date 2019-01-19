@@ -1,15 +1,16 @@
 var path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    context: path.join(__dirname, 'app'),
+    //context: path.join(__dirname, 'app'),
     entry: {
-        javascript: './app.js',
-        html: './index.html'
+        javascript: './app/app.js',
+        // html: './app/index.html'
     },
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js'
-    },
+    // output: {
+    //     path: path.join(__dirname, 'dist'),
+    //     filename: 'bundle.js'
+    // },
     module: {
         rules: [
             {
@@ -21,28 +22,18 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                use: {
-                    loader: 'html-loader'
-                }
-            },
-            {
-                test: /\.css$/,
-                use: {
-                    loader: 'style-loader!css-loader'
-                }
-            },
-            {
-                test: /\.png$/,
-                use: {
-                    loader: 'url-loader?limit=100000'
-                }
-            },
-            {
-                test: /\.jpg$/,
-                use: {
-                    loader: 'file-loader'
-                }
+                use: [
+                    {
+                        loader: 'html-loader'
+                    }
+                ]
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebPackPlugin({
+            template: './app/index.html',
+            filename: './index.html'
+        })
+    ]
 }
